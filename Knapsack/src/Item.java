@@ -1,15 +1,24 @@
 public class Item {
-    public final int weight;
-    public final int value;
+    public  double weight;
+    public  double value;
     public double cost;
+    public int index;
 
-    public Item(int weight, int value) {
+    public Item(double weight, double value,int index) {
         this.weight = weight;
         this.value = value;
-        this.cost =   (double)value /(double) weight;
-    }
+        this.index = index;
 
-    public int getWeight() {
+        this.cost =   value / weight;
+    }
+    public Item(double weight, double value) {
+        this.weight = weight;
+        this.value = value;
+        this.index = 0;
+
+        this.cost = value / weight;
+    }
+    public double getWeight() {
         return weight;
     }
 
@@ -17,8 +26,12 @@ public class Item {
         return cost;
     }
 
-    public int getValue() {
+    public double getValue() {
         return value;
+    }
+
+    public int getIndex() {
+        return index;
     }
 }
 
