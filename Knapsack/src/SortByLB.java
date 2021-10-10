@@ -1,5 +1,6 @@
 import java.util.Comparator;
 
+// un comparateur qui compare les noeuds par la valeurs de la borne inférieure
 public class SortByLB implements Comparator<Node> {
     @Override
     public int compare(Node o1, Node o2) {

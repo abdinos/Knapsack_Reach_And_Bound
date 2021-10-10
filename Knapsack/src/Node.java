@@ -1,14 +1,14 @@
 public class Node {
 
     //Stocke la somme des poids des éléments inclus
-     double weight;
+     float weight;
     //stocke la somme des valeurs des éléments inclus
-     double totalValue;
+     float totalValue;
     // le niveau de ce noeud dans l'arbre décisionnel
      int level;
-    // la borne supérieur ( par la méthode gluton)
+    // la borne supérieure ( par la méthode gluton)
      double upperBound;
-    // la borne inférieur (0/1) soit on prend l'objet soit non;
+    // la borne inférieure (0/1) soit on prend l'objet soit non;
      double lowerBound;
     //un pointeur sur le noeud sélectionné
      boolean flag;
@@ -25,11 +25,11 @@ public class Node {
         this.flag = noeud.flag;
     }
 
-    public double getWeight() {
+    public float getWeight() {
         return weight;
     }
 
-    public double getTotalValue() {
+    public float getTotalValue() {
         return totalValue;
     }
 

@@ -5,14 +5,14 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        File sac0 = new File("C:\\Users\\abdes\\Downloads\\Documents\\Master\\ARO\\TP\\sac2.txt");
+        File sac0 = new File("C:\\Users\\abdes\\Downloads\\Documents\\Master\\ARO\\TP\\sac0.txt");
         BufferedReader knapsackReader = new BufferedReader(new FileReader(sac0));
         Knapsack knapsack0 = new Knapsack(Double.parseDouble(knapsackReader.readLine()));
         String str;
         int index =0;
         while ((str = knapsackReader.readLine())!= null){
             String[] eachLine = str.split(" ");
-            knapsack0.items.add(new Item(Double.parseDouble(eachLine[0]), Double.parseDouble(eachLine[1]),index));
+            knapsack0.items.add(new Item(Float.parseFloat(eachLine[0]), Float.parseFloat(eachLine[1]),index));
             index++;
 
         }

@@ -1,32 +1,30 @@
 public class Item {
-    public  double weight;
-    public  double value;
-    public double cost;
+    //classe qui crée l'objet Item
+
+    //poids de l'élément
+    public  float weight;
+    //valeur de l'élément
+    public  float value;
+    //l'indexe  de l'élément dans la liste.
     public int index;
 
-    public Item(double weight, double value,int index) {
+    public Item(float weight, float value,int index) {
         this.weight = weight;
         this.value = value;
         this.index = index;
-
-        this.cost =   value / weight;
     }
-    public Item(double weight, double value) {
+    public Item(float weight, float value) {
         this.weight = weight;
         this.value = value;
         this.index = 0;
-
-        this.cost = value / weight;
     }
-    public double getWeight() {
+    public float getWeight() {
         return weight;
     }
 
-    public double getCost() {
-        return cost;
-    }
 
-    public double getValue() {
+
+    public float getValue() {
         return value;
     }
 
